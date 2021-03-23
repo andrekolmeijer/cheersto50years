@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+
+    html {
+        min-height: -webkit-fill-available;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+
+    body > div {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+
+    body > div > div {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+
+} */
