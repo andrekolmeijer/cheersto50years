@@ -105,7 +105,7 @@
 
         <img src="@/assets/bg/hamburger.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
-             :style="{ transform: 'translate(-220px, -440px)' }"
+             :style="{ transform: 'translate(-220px, -460px)' }"
              alt="beer crate background image">
 
         <img src="@/assets/bg/hamburger.svg"
