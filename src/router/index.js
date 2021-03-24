@@ -4,7 +4,7 @@ import Accommodatie from '@/views/Accommodatie.vue'
 import Cadeau from '@/views/Cadeau.vue'
 import Corona from '@/views/Corona.vue'
 import Indeling from '@/views/Indeling.vue'
-import Planning from '@/views/Planning.vue'
+import Activiteiten from '@/views/Activiteiten.vue'
 import Routebeschrijving from '@/views/Routebeschrijving.vue'
 
 const routes = [
@@ -54,17 +54,17 @@ const routes = [
         }
     },
     {
-        path: '/indeling',
-        name: 'Indeling',
-        component: Indeling,
+        path: '/activiteiten',
+        name: 'Activiteiten',
+        component: Activiteiten,
         meta: {
             requiresAccessCode: true
         }
     },
     {
-        path: '/planning',
-        name: 'Planning',
-        component: Planning,
+        path: '/indeling',
+        name: 'Indeling',
+        component: Indeling,
         meta: {
             requiresAccessCode: true
         }

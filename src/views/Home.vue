@@ -68,19 +68,19 @@
                         </span>
                     </div>
                 </router-link>
+                <router-link to="/activiteiten">
+                    <div class="flex flex-col justify-center items-center space-y-4">
+                        <ScheduleIcon class="z-10 w-24 sm:w-36 h-24 sm:h-36" />
+                        <span class="font-bold text-center">
+                            Activiteiten
+                        </span>
+                    </div>
+                </router-link>
                 <router-link to="/indeling">
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <PeopleIcon class="z-10 w-24 sm:w-36 h-24 sm:h-36" />
                         <span class="font-bold text-center">
                             Indeling
-                        </span>
-                    </div>
-                </router-link>
-                <router-link to="/planning">
-                    <div class="flex flex-col justify-center items-center space-y-4">
-                        <ScheduleIcon class="z-10 w-24 sm:w-36 h-24 sm:h-36" />
-                        <span class="font-bold text-center">
-                            Planning
                         </span>
                     </div>
                 </router-link>
