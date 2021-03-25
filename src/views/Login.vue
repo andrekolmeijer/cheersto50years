@@ -55,9 +55,9 @@ export default {
 
       function submitAccessCode() {
           if (state.accessCodeInput) {
-              const content = state.accessCodeInput;
+              const input = state.accessCodeInput;
 
-              store.dispatch('setAccessCode', content)
+              store.dispatch('setAccessCode', input)
               state.accessCodeInput = ''
               router.push({ path: '/' })
           }
