@@ -48,7 +48,7 @@
                             Vrijdag 30 april 19:00 uur
                         </h3>
                         <p class="text-base">
-                            Deze avond staat in het teken van bier en BBQ. Mogelijk maken we ook een kampvuurtje. Dit is afhankelijk van het weer.
+                            Deze avond staat in het teken van bier en BBQ. Mogelijk maken we ook een kampvuurtje. Dat is afhankelijk van het weer.
                         </p>
                     </div>
                     <div class="mt-6 sm:mt-12 text-lg w-full md:w-1/2 max-w-lg">
