@@ -55,7 +55,7 @@
                         </th>
                     </thead>
                     <tbody>
-                        <tr v-for="(person, index) in state.burgersBeerBBQ" :key="index"
+                        <tr v-for="(person, index) in state.burgersBeerAndBBQ" :key="index"
                             class="capitalize">
                             <td class="px-3 xs:px-6 pt-4 whitespace-nowrap">
                                 {{ person.name }}
@@ -114,7 +114,7 @@ export default {
         const store = useStore()
 
         const state = reactive({
-            burgersBeerBBQ: [
+            burgersBeerAndBBQ: [
                 { name: 'bjorn', linnen: 'ja', diet: 'nee' },
                 { name: 'eline', linnen: 'ja', diet: 'nee' },
                 { name: 'Tim D.', linnen: 'nee', diet: 'ja' },
