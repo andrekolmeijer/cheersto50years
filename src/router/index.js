@@ -6,6 +6,7 @@ import Corona from '@/views/Corona.vue'
 import Indeling from '@/views/Indeling.vue'
 import Activiteiten from '@/views/Activiteiten.vue'
 import Routebeschrijving from '@/views/Routebeschrijving.vue'
+import store from '../store'
 
 const routes = [
     {
@@ -101,6 +102,11 @@ router.beforeEach(async (to, from, next) => {
     } else {
         next()
     }
+})
+
+router.afterEach(async (to, from) => {
+    localStorage.setItem('previousRouteName', from.name)
+    store.dispatch('getPreviousRouteName')
 })
 
 router.resolve({
