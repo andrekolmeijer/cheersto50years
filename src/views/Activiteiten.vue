@@ -42,7 +42,7 @@
                 <div class="md:flex">
                     <div class="sm:mr-6 mt-12 text-lg w-full md:w-1/2 max-w-lg">
                         <h2 class="font-bold">
-                            Burgers, Beer en BBQ &#127828; &#127866; &#129385;
+                            Burgers, Beer and BBQ &#127828; &#127866; &#129385;
                         </h2>
                         <h3 class="text-base mb-3 font-light">
                             Vrijdag 30 april 19:00 uur
