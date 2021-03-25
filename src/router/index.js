@@ -3,7 +3,7 @@ import Home from '@/views/Home.vue'
 import Accommodatie from '@/views/Accommodatie.vue'
 import Cadeau from '@/views/Cadeau.vue'
 import Corona from '@/views/Corona.vue'
-import Indeling from '@/views/Indeling.vue'
+import Aanwezigheid from '@/views/Aanwezigheid.vue'
 import Activiteiten from '@/views/Activiteiten.vue'
 import Routebeschrijving from '@/views/Routebeschrijving.vue'
 import store from '../store'
@@ -63,9 +63,9 @@ const routes = [
         }
     },
     {
-        path: '/indeling',
-        name: 'Indeling',
-        component: Indeling,
+        path: '/aanwezigheid',
+        name: 'Aanwezigheid',
+        component: Aanwezigheid,
         meta: {
             requiresAccessCode: true
         }

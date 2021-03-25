@@ -24,8 +24,8 @@
                     <div class="sm:mr-6 mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
                         <p>
                             Gedurende het weekend zijn er meerdere activiteiten gepland. Hieronder vind je daar een overzicht van. Onder
-                            <router-link to="/indeling" class="text-purple-700 font-semibold">
-                                <span class="hover:underline">Indeling</span>
+                            <router-link to="/aanwezigheid" class="text-purple-700 font-semibold">
+                                <span class="hover:underline">Aanwezigheid</span>
                             </router-link>
                             kun je zien wat je doorgegeven hebt met betrekking tot wanneer je komt.
                         </p>

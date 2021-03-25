@@ -76,11 +76,11 @@
                         </span>
                     </div>
                 </router-link>
-                <router-link to="/indeling">
+                <router-link to="/aanwezigheid">
                     <div class="flex flex-col justify-center items-center space-y-4">
                         <PeopleIcon class="z-10 w-24 sm:w-36 h-24 sm:h-36" />
                         <span class="font-bold text-center">
-                            Indeling
+                            Aanwezigheid
                         </span>
                     </div>
                 </router-link>
