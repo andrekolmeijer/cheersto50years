@@ -70,8 +70,8 @@ export const Attendees = {
         ],
         bikesAndBeers: [
             { name: 'Bjorn', rental: 'ja', tandem: 'ja' },
-            { name: 'Eline', rental: 'ja', tandem: 'ja' },
-            { name: 'Linda', rental: '', tandem: '' },
+            { name: 'Eline', rental: 'ja', tandem: 'Bjorn' },
+            { name: 'Linda', rental: 'Volle bak huren die handel.', tandem: 'Tandems. Alleen maar tandems.' },
             { name: 'Dumont', rental: '', tandem: '' },
         ]
     },

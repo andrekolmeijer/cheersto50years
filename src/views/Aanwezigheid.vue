@@ -70,24 +70,36 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(person, index) in store.state.Attendees.burgersBeerAndBBQ" :key="index">
-                                    <td class="sm:pl-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pl-6 pt-4 w-1/3 align-baseline">
                                         {{ person.name }}
                                     </td>
-                                    <td class="pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.linnen === 'ja' || person.linnen === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.linnen === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.linnen === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.linnen === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.linnen !== 'ja' && person.linnen !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.linnen }}
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="sm:pr-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pr-6 pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.diet === 'ja' || person.diet === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.diet === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.diet === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.diet === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.diet !== 'ja' && person.diet !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.diet }}
                                             </div>
                                         </div>
                                     </td>
@@ -124,19 +136,25 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(person, index) in store.state.Attendees.coffeeAndCake" :key="index">
-                                    <td class="sm:pl-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pl-6 pt-4 w-1/3 align-baseline">
                                         {{ person.name }}
                                     </td>
-                                    <td class="pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.diet === 'ja' || person.diet === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.diet === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.diet === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.diet === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.diet !== 'ja' && person.diet !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.diet }}
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="sm:pr-6 pt-4 w-1/3"></td>
+                                    <td class="sm:pr-6 pt-4 w-1/3 align-baseline"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -176,24 +194,35 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(person, index) in store.state.Attendees.winingAndDining" :key="index">
-                                    <td class="sm:pl-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pl-6 pt-4 w-1/3 align-baseline">
                                         {{ person.name }}
                                     </td>
-                                    <td class="pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.linnen === 'ja' || person.linnen === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.linnen === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.linnen === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.linnen === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.linnen !== 'ja' && person.linnen !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.linnen }}
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="sm:pr-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pr-6 pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.diet === 'ja' || person.diet === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.diet === 'ja'"
                                                             class="z-10 h-4 w-4" />
                                                 <CrossIcon v-if="person.diet === 'nee'" class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.diet !== 'ja' && person.diet !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.diet }}
                                             </div>
                                         </div>
                                     </td>
@@ -232,24 +261,36 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(person, index) in store.state.Attendees.bikesAndBeers" :key="index">
-                                    <td class="sm:pl-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pl-6 pt-4 w-1/3 align-baseline">
                                         {{ person.name }}
                                     </td>
-                                    <td class="pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.rental === 'ja' || person.rental === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.rental === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.rental === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.rental === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.rental !== 'ja' && person.rental !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.rental }}
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="sm:pr-6 pt-4 w-1/3 whitespace-nowrap">
+                                    <td class="sm:pr-6 pt-4 w-1/3 align-baseline">
                                         <div class="flex justify-center items-center">
-                                            <div class="flex-shrink-0 h-4 w-4">
+                                            <div v-if="person.tandem === 'ja' || person.tandem === 'nee'"
+                                                 class="h-4 w-4">
                                                 <CheckIcon v-if="person.tandem === 'ja'"
-                                                            class="z-10 h-4 w-4" />
-                                                <CrossIcon v-if="person.tandem === 'nee'" class="z-10 h-4 w-4" />
+                                                           class="z-10 h-4 w-4" />
+                                                <CrossIcon v-if="person.tandem === 'nee'"
+                                                           class="z-10 h-4 w-4" />
+                                            </div>
+                                            <div v-if="person.tandem !== 'ja' && person.tandem !== 'nee'"
+                                                 class="font-light text-sm w-full h-full text-center">
+                                                {{ person.tandem }}
                                             </div>
                                         </div>
                                     </td>
