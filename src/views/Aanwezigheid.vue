@@ -2,8 +2,18 @@
 
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
-        <a @click="$router.go(-1)"
-           class="self-start cursor-pointer">
+        <router-link :to="{ name: 'Home' }"
+                     class="self-start cursor-pointer">
+            <div class="flex flex-col mb-12">
+                <ArrowIcon class="z-10 w-12 h-12 transform -rotate-90 -translate-y-3.5" />
+                <span class="font-semibold text-sm text-center -mt-5">
+                    Home
+                </span>
+            </div>
+        </router-link>
+
+        <!-- <router-link :to="{ name: store.state.previousRouteName }"
+                     class="self-start cursor-pointer">
             <div class="flex flex-col justify-center items-center mb-12">
                 <ArrowIcon class="z-10 w-12 h-12 transform -rotate-90 -translate-y-3.5" />
                 <span v-if="store.state.previousRouteName"
@@ -15,7 +25,7 @@
                     Terug
                 </span>
             </div>
-        </a>
+        </router-link> -->
 
         <div class="flex flex-col items-center max-w-5xl min-h-full">
 
@@ -29,6 +39,16 @@
                     <div class="sm:mr-6 mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
                         <p>
                             Op deze pagina houden we bij wanneer iedereen komt. Ook kun je hier zien of je aangegeven hebt van een linnenpakket en/of fiets gebruik te willen maken.
+                        </p>
+                        <p>
+                            Voor data en tijden, kun je terecht op de
+                            <router-link :to="{ name: 'Activiteiten' }"
+                                         class="text-purple-700 font-semibold">
+                                <span class="hover:underline">
+                                    Activiteiten
+                                </span>
+                            </router-link>
+                            pagina.
                         </p>
                     </div>
                     <div class="mt-3 md:mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
@@ -336,7 +356,7 @@ import CrossIcon from '@/components/CrossIcon'
 import { useStore } from "vuex"
 
 export default {
-    name: 'Indeling',
+    name: 'Aanwezigheid',
     components: { ArrowIcon, PeopleIcon, CheckIcon, CrossIcon },
     setup() {
         const store = useStore()

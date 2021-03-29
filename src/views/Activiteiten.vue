@@ -2,15 +2,15 @@
 
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
-        <a @click="$router.go(-1)"
-           class="self-start cursor-pointer">
+        <router-link :to="{ name: 'Home' }"
+                     class="self-start cursor-pointer">
             <div class="flex flex-col mb-12">
                 <ArrowIcon class="z-10 w-12 h-12 transform -rotate-90 -translate-y-3.5" />
                 <span class="font-semibold text-sm text-center -mt-5">
                     Home
                 </span>
             </div>
-        </a>
+        </router-link>
 
         <div class="flex flex-col items-center max-w-5xl min-h-full">
 
@@ -24,8 +24,11 @@
                     <div class="sm:mr-6 mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
                         <p>
                             Gedurende het weekend zijn er meerdere activiteiten gepland. Hieronder vind je daar een overzicht van. Onder
-                            <router-link to="/aanwezigheid" class="text-purple-700 font-semibold">
-                                <span class="hover:underline">Aanwezigheid</span>
+                            <router-link :to="{ name: 'Aanwezigheid' }"
+                                         class="text-purple-700 font-semibold">
+                                <span class="hover:underline">
+                                    Aanwezigheid
+                                </span>
                             </router-link>
                             kun je zien wat je doorgegeven hebt met betrekking tot wanneer je komt.
                         </p>

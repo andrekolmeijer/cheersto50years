@@ -2,15 +2,15 @@
 
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
-        <a @click="$router.go(-1)"
-           class="self-start cursor-pointer">
+        <router-link :to="{ name: 'Home' }"
+                     class="self-start cursor-pointer">
             <div class="flex flex-col mb-12">
                 <ArrowIcon class="z-10 w-12 h-12 transform -rotate-90 -translate-y-3.5" />
                 <span class="font-semibold text-sm text-center -mt-5">
                     Home
                 </span>
             </div>
-        </a>
+        </router-link>
 
         <div class="flex flex-col items-center max-w-5xl min-h-full">
 
