@@ -37,16 +37,30 @@
                 </div>
             </div>
 
+            <a download="Routebeschrijving de Mossel.pdf"
+               href="@/assets/routebeschrijving-mossel.pdf"
+               class="z-10 w-full sm:max-w-md mt-6 p-6 border border-gray-900 rounded-xl">
+                <div class="flex flex-col justify-center items-center hyphens-none">
+                    <DownloadIcon class="z-10 w-20 xs:w-24 sm:w-36 h-20 xs:h-24 sm:h-36" />
+                    <div class="mt-6 font-bold text-center text-lg">
+                        Download Routebeschrijving
+                    </div>
+                    <div class="font-light text-center">
+                        Kan 30 tot 60 seconden duren (24 MB).
+                    </div>
+                </div>
+            </a>
+
         </div>
 
         <img src="@/assets/bg/punch.svg"
              class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
-             :style="{ transform: 'translate(-100px, 175px)' }"
+             :style="{ transform: 'translate(-120px, 315px)' }"
              alt="beer crate background image">
 
         <img src="@/assets/bg/punch.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
-             :style="{ transform: 'translate(-100px, 120px)' }"
+             :style="{ transform: 'translate(-130px, 220px)' }"
              alt="beer crate background image">
 
         <img src="@/assets/bg/punch.svg"
@@ -61,9 +75,10 @@
 <script>
 import ArrowIcon from '@/components/ArrowIcon'
 import DirectionsIcon from '@/components/DirectionsIcon'
+import DownloadIcon from '@/components/DownloadIcon'
 
 export default {
     name: 'Routebeschrijving',
-    components: { ArrowIcon, DirectionsIcon }
+    components: { ArrowIcon, DirectionsIcon, DownloadIcon }
 }
 </script>
