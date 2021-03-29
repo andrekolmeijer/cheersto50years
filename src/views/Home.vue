@@ -1,6 +1,38 @@
 <template>
 
-  <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
+  <div :class="{ 'h-auto': store.state.messageRead, 'h-screen': !store.state.messageRead }"
+       class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
+
+    <div v-if="store.state.messageRead === false"
+         class="z-50 sm:mt-12 absolute inset-0 flex justify-center items-start">
+        <div class="p-12 sm:py-8 max-w-2xl h-screen sm:h-auto bg-blue-400 sm:rounded-xl shadow-lg">
+            <h2 class="font-cursive text-center text-xl xs:text-2xl sm:text-3xl font-semibold">
+                Attentie
+            </h2>
+            <div class="mt-4 space-y-3 text-lg">
+                <p>
+                    Op dit moment is het nog onduidelijk of het feest kan doorgaan i.v.m. Corona. Mocht het feest niet doorgaan, dan wordt het gewoon verzet naar een moment dat het wel verantwoord is om bij elkaar te zijn.
+                </p>
+                <p class="text-center sm:hidden">
+                    <span class="not-italic">
+                        &#127880;
+                    </span>
+                </p>
+                <p class="italic font-bold text-center">
+                    <span class="not-italic hidden sm:inline">
+                        &#127880;
+                    </span>
+                    Houd voor eventuele wijzigingen de website in de gaten.
+                </p>
+                <div class="flex justify-center items-center">
+                    <button @click="messageRead"
+                            class="mt-3 w-full sm:w-auto flex justify-center py-2 px-6 border-2 border-black rounded-lg shadow-sm text-base font-bold text-black bg-green-400 hover:bg-green-500 focus:bg-green-500 focus:outline-none active:bg-green-400 cursor-pointer">
+                        Ik begrijp het!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="flex flex-col items-center max-w-5xl">
 
@@ -25,22 +57,6 @@
             </div>
         </div>
 
-        <div class="z-10 text-center max-w-2xl">
-            <h2 class="mt-12 font-cursive text-xl xs:text-2xl sm:text-3xl font-semibold">
-                Attentie
-            </h2>
-            <div class="mt-4 space-y-3 text-lg">
-                <p>
-                    Op dit moment is het nog onduidelijk of het feest door kan gaan i.v.m. Corona. Mocht het feest niet doorgaan dan wordt het gewoon verzet naar een moment dat het wel verantwoord is om bij elkaar te zijn.
-                </p>
-                <p class="italic">
-                    <span class="not-italic">
-                        &#127880;
-                    </span>
-                    Eventuele wijziginen worden hier op de site vermeld.
-                </p>
-            </div>
-        </div>
 
         <div class="mt-20 mx-auto px-6 min-h-34">
             <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-12">
@@ -131,7 +147,11 @@ export default {
     setup() {
         const store = useStore()
 
-        return { store }
+        function messageRead() {
+            store.dispatch('setMessageRead')
+        }
+
+        return { store, messageRead }
     }
 }
 </script>
