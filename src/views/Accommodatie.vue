@@ -57,11 +57,15 @@
                         <p>
                             Voor gasten is het toegestaan om met de auto naar de boerderij te komen. Verder is het gebied alleen toegankelijk voor voetgangers, fietsers en mensen te paard.
                         </p>
-                        <p class="italic text-base text-center">
-                            <span class="not-italic">
-                                &#127880;
-                            </span>
-                            Gebruik de routebeschrijving elders op de site om je weg te vinden naar dit stukje pracht en praal.
+                        <p class="italic text-base">
+                            Gebruik de
+                            <router-link :to="{ name: 'Routebeschrijving' }"
+                                         class="text-purple-700 font-semibold">
+                                <span class="hover:underline">
+                                    Routebeschrijving
+                                </span>
+                            </router-link>
+                            om je weg te vinden naar dit stukje pracht en praal.
                         </p>
                     </div>
                 </div>
@@ -83,11 +87,8 @@
                         <p>
                             Het is ook mogelijk een linnen- en/of handdoekpakket te huren. De kosten hiervoor zijn €10 en €7,50 respectieve&shy;lijk.
                         </p>
-                        <p class="italic text-base text-center">
-                            <span class="not-italic">
-                                &#127880;
-                            </span>
-                            Graag van te voren even doorgeven a.j.b.
+                        <p class="font-semibold text-base">
+                            Als je hier gebruik van wil maken, graag even van te voren aan mij (Bjorn) doorgeven a.j.b.
                         </p>
                     </div>
                     <div class="mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg flex justify-center items-center">

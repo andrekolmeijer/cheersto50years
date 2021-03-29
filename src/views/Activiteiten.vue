@@ -93,7 +93,7 @@
                             <a href="https://guillvandevenfietsen.nl/" class="text-purple-700 font-semibold" target="_blank">
                             <span class="hover:underline">Guill van de Ven</span>
                             </a>
-                            een fiets (of tandem!) reserveren. Uiterlijk 29 april doorgeven alsjeblieft.
+                            een fiets (of tandem!) reserveren. Ook dit graag even aan mij (Bjorn) doorgeven.
                         </p>
                     </div>
                 </div>

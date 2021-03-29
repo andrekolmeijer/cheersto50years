@@ -53,7 +53,7 @@
                     </div>
                     <div class="mt-3 md:mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
                         <p>
-                            Mocht je nog bepaalde dieet wensen hebben (vegetarisch, allergieën of andere zaken), geef het door. Dan noteren we dat. &#127814; &#127805; &#127789;
+                            Mocht je nog bepaalde dieet wensen hebben (vegetarisch, allergieën of andere zaken), ook dat kun je aan me doorgeven. &#127814; &#127805; &#127789;
                         </p>
                     </div>
                 </div>
