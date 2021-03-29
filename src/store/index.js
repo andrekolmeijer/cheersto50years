@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import { Attendees } from './Attendees'
+import { Date } from './Date'
 
 export default createStore({
   state: {
@@ -37,6 +38,7 @@ export default createStore({
   },
 
   modules: {
-      Attendees
+      Attendees,
+      Date
   }
 })

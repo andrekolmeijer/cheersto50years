@@ -30,7 +30,7 @@
                             Hierbij gaan we uit van de richtlijnen van het RIVM. Vooralsnog staat het feest gepland voor het weekend van:
                         </p>
                         <p class="text-center font-bold">
-                            30 april t/m 2 mei
+                            {{ store.state.Date.eventDate }}
                         </p>
                         <p class="italic text-base text-center">
                             <span class="not-italic">
@@ -66,9 +66,15 @@
 <script>
 import ArrowIcon from '@/components/ArrowIcon'
 import CoronaIcon from '@/components/CoronaIcon'
+import { useStore } from 'vuex'
 
 export default {
     name: 'Corona',
-    components: { ArrowIcon, CoronaIcon }
+    components: { ArrowIcon, CoronaIcon },
+    setup() {
+        const store = useStore()
+
+        return { store }
+    }
 }
 </script>

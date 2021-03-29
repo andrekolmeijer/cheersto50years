@@ -14,7 +14,7 @@
                         Op 26 mei 1971 heb ik voor het eerst het levenslicht gezien. Nu, 50 jaar later, wil ik dit graag vieren samen met jou! Het is feest in het weekend van:
                     </p>
                     <p class="font-bold text-center">
-                        30 april t/m 2 mei
+                        {{ store.state.Date.eventDate }}
                     </p>
                 </div>
                 <div class="mt-3 md:mt-6 text-lg w-full md:w-1/2 max-w-lg">
