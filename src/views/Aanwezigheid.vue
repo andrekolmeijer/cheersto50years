@@ -12,21 +12,6 @@
             </div>
         </router-link>
 
-        <!-- <router-link :to="{ name: store.state.previousRouteName }"
-                     class="self-start cursor-pointer">
-            <div class="flex flex-col justify-center items-center mb-12">
-                <ArrowIcon class="z-10 w-12 h-12 transform -rotate-90 -translate-y-3.5" />
-                <span v-if="store.state.previousRouteName"
-                      class="font-semibold text-sm text-center -mt-5">
-                    {{ store.state.previousRouteName }}
-                </span>
-                <span v-else
-                      class="font-semibold text-sm text-center -mt-5">
-                    Terug
-                </span>
-            </div>
-        </router-link> -->
-
         <div class="flex flex-col items-center max-w-5xl min-h-full">
 
             <PeopleIcon class="z-10 w-20 xs:w-24 sm:w-36 h-20 xs:h-24 sm:h-36 my-6" />

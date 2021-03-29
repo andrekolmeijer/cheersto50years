@@ -13,15 +13,6 @@ export default {
         const store = useStore()
 
         store.dispatch('initialiseStore')
-
-        // window.onresize = function() {
-        //     console.log('window resized');
-        //     document.body.height = window.innerHeight
-        //     console.log(window.innerHeight);
-        //     console.log(document.body.height);
-        // }
-
-        // window.onresize()
     }
 }
 </script>

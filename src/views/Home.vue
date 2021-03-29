@@ -97,8 +97,6 @@
 
     </div>
 
-    <!-- <BalloonIcon class="absolute top-0 left-0 mt-56 sm:mt-40 sm:ml-32 3xl:ml-52 z-0 w-full sm:w-1/3 opacity-30" /> -->
-
     <img src="@/assets/bg/balloon.svg"
          class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
          :style="{ transform: 'translate(-65px, -797px)' }"
@@ -120,7 +118,6 @@
 
 <script>
 import AccommodationIcon from '@/components/AccommodationIcon'
-// import BalloonIcon from '@/components/BalloonIcon'
 import CoronaIcon from '@/components/CoronaIcon'
 import DirectionsIcon from '@/components/DirectionsIcon'
 import PeopleIcon from '@/components/PeopleIcon'
