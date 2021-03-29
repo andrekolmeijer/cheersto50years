@@ -4,7 +4,7 @@ export const Attendees = {
     state: {
         burgersBeerAndBBQ: [
             { name: 'Bjorn', linnen: 'nee', diet: 'nee' },
-            { name: 'Eline', linnen: 'ja', diet: 'nee' },
+            { name: 'Eline', linnen: 'nee', diet: 'nee' },
             { name: 'Tim D.', linnen: '', diet: '' },
             { name: 'Johan', linnen: '', diet: '' },
             { name: 'Jos', linnen: '', diet: '' },
@@ -43,7 +43,7 @@ export const Attendees = {
         ],
         winingAndDining: [
             { name: 'Bjorn', linnen: 'nee', diet: 'nee' },
-            { name: 'Eline', linnen: 'ja', diet: 'nee' },
+            { name: 'Eline', linnen: 'nee', diet: 'nee' },
             { name: 'Dumont', linnen: '', diet: '' },
             { name: 'Linda', linnen: '', diet: '' },
             { name: 'Martien', linnen: '', diet: '' },
@@ -71,7 +71,7 @@ export const Attendees = {
         bikesAndBeers: [
             { name: 'Bjorn', rental: 'ja', tandem: 'ja' },
             { name: 'Eline', rental: 'ja', tandem: 'Bjorn' },
-            { name: 'Linda', rental: 'Volle bak huren die handel.', tandem: 'Tandems. Alleen maar tandems.' },
+            { name: 'Linda', rental: '', tandem: '' },
             { name: 'Dumont', rental: '', tandem: '' },
         ]
     },
