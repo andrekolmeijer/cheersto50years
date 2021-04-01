@@ -38,7 +38,7 @@
             </div>
 
             <a download="Routebeschrijving de Mossel.pdf"
-               href="@/assets/routebeschrijving-mossel.pdf"
+               :href="routebeschrijving"
                class="z-10 w-full sm:max-w-md mt-6 p-6 border border-gray-900 rounded-xl">
                 <div class="flex flex-col justify-center items-center hyphens-none">
                     <DownloadIcon class="z-10 w-20 xs:w-24 sm:w-36 h-20 xs:h-24 sm:h-36" />
@@ -46,10 +46,33 @@
                         Download Routebeschrijving
                     </div>
                     <div class="font-light text-center">
-                        Kan 30 tot 60 seconden duren (24 MB).
+                        Kan enkele seconden duren (4,5 MB).
                     </div>
                 </div>
             </a>
+
+            <div class="z-10 mt-3 text-center">
+                <div class="sm:hidden">
+                    <p>
+                        Printen? Download de
+                    </p>
+                    <p class="text-base font-light">
+                        <a download="Routebeschrijving de Mossel (Print).pdf"
+                            :href="routebeschrijvingPrint"
+                            class="font-normal text-purple-700">
+                            <span class="hover:underline">Routebeschrijving voor Print</span>.
+                        </a>
+                    </p>
+                </div>
+                <p class="text-base font-light hidden sm:inline">
+                    Printen? Download de
+                        <a download="Routebeschrijving de Mossel (Print).pdf"
+                           :href="routebeschrijvingPrint"
+                           class="font-normal text-purple-700">
+                            <span class="hover:underline">Routebeschrijving voor Print</span>.
+                        </a>
+                </p>
+            </div>
 
         </div>
 
@@ -79,6 +102,12 @@ import DownloadIcon from '@/components/DownloadIcon'
 
 export default {
     name: 'Routebeschrijving',
-    components: { ArrowIcon, DirectionsIcon, DownloadIcon }
+    components: { ArrowIcon, DirectionsIcon, DownloadIcon },
+    setup() {
+        const routebeschrijving = require("@/assets/routebeschrijving.pdf")
+        const routebeschrijvingPrint = require("@/assets/routebeschrijving-print.pdf")
+
+        return { routebeschrijving, routebeschrijvingPrint }
+    }
 }
 </script>
