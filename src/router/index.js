@@ -1,11 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
-import Accommodatie from '@/views/Accommodatie.vue'
-import Cadeau from '@/views/Cadeau.vue'
-import Corona from '@/views/Corona.vue'
-import Aanwezigheid from '@/views/Aanwezigheid.vue'
-import Activiteiten from '@/views/Activiteiten.vue'
-import Routebeschrijving from '@/views/Routebeschrijving.vue'
 import store from '../store'
 
 const routes = [
@@ -20,7 +14,7 @@ const routes = [
     {
         path: '/login',
         name: 'Login',
-        component: () => import('@/views/Login.vue'),
+        component: () => import('@/views/Login'),
         meta: {
             hasAccessCode: true
         }
@@ -33,7 +27,7 @@ const routes = [
     {
         path: '/accommodatie',
         name: 'Accommodatie',
-        component: Accommodatie,
+        component: () => import('@/views/Accommodatie'),
         meta: {
             requiresAccessCode: true
         }
@@ -41,7 +35,7 @@ const routes = [
     {
         path: '/cadeau',
         name: 'Cadeau',
-        component: Cadeau,
+        component: () => import('@/views/Cadeau'),
         meta: {
             requiresAccessCode: true
         }
@@ -49,7 +43,7 @@ const routes = [
     {
         path: '/corona',
         name: 'Corona',
-        component: Corona,
+        component: () => import('@/views/Corona'),
         meta: {
             requiresAccessCode: true
         }
@@ -57,7 +51,7 @@ const routes = [
     {
         path: '/activiteiten',
         name: 'Activiteiten',
-        component: Activiteiten,
+        component: () => import('@/views/Activiteiten'),
         meta: {
             requiresAccessCode: true
         }
@@ -65,7 +59,7 @@ const routes = [
     {
         path: '/aanwezigheid',
         name: 'Aanwezigheid',
-        component: Aanwezigheid,
+        component: () => import('@/views/Aanwezigheid'),
         meta: {
             requiresAccessCode: true
         }
@@ -73,7 +67,7 @@ const routes = [
     {
         path: '/routebeschrijving',
         name: 'Routebeschrijving',
-        component: Routebeschrijving,
+        component: () => import('@/views/Routebeschrijving'),
         meta: {
             requiresAccessCode: true
         }
