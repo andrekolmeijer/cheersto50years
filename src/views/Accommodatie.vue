@@ -61,9 +61,7 @@
                             Gebruik de
                             <router-link :to="{ name: 'Routebeschrijving' }"
                                          class="text-purple-700 font-semibold">
-                                <span class="hover:underline">
-                                    Routebeschrijving
-                                </span>
+                                <span class="hover:underline">Routebeschrijving</span>
                             </router-link>
                             om je weg te vinden naar dit stukje pracht en praal.
                         </p>
