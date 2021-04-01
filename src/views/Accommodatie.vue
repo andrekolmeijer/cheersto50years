@@ -38,7 +38,7 @@
                         </p>
                     </div>
                     <div class="mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg flex justify-center items-center">
-                        <img src="@/assets/boerderij.png"
+                        <img src="@/assets/boerderij.jpg"
                              class="border-2 border-solid border-black rounded-xl shadow-md w-full sm:w-3/4"
                              alt="Boerderij Mossel">
                     </div>
