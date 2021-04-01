@@ -89,11 +89,13 @@
                             Op zondag gaan we fietsen over de Veluwe en stoppen we ergens voor een drankje. Als je wil kun je een fiets reserveren bij Guill.
                         </p>
                         <p class="text-base mt-6 italic">
-                            Voor een fles wijn kun je bij
-                            <a href="https://guillvandevenfietsen.nl/" class="text-purple-700 font-semibold" target="_blank">
+                            Voor een fles wijn kun je via mij (Bjorn) bij
+                            <a href="https://guillvandevenfietsen.nl/"
+                               class="text-purple-700 font-semibold"
+                               target="_blank">
                             <span class="hover:underline">Guill van de Ven</span>
                             </a>
-                            een fiets (of tandem!) reserveren. Ook dit graag even aan mij (Bjorn) doorgeven.
+                            een fiets (of tandem!) reserveren.
                         </p>
                     </div>
                 </div>
