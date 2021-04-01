@@ -38,7 +38,7 @@
             </div>
 
             <a download="Routebeschrijving de Mossel.pdf"
-               :href="routebeschrijving"
+               :href="`${publicPath}routebeschrijving.pdf`"
                class="z-10 w-full sm:max-w-md mt-6 p-6 border border-gray-900 rounded-xl">
                 <div class="flex flex-col justify-center items-center hyphens-none">
                     <DownloadIcon class="z-10 w-20 xs:w-24 sm:w-36 h-20 xs:h-24 sm:h-36" />
@@ -58,7 +58,7 @@
                     </p>
                     <p class="text-base font-light">
                         <a download="Routebeschrijving de Mossel (Print).pdf"
-                            :href="routebeschrijvingPrint"
+                            :href="`${publicPath}routebeschrijving-print.pdf`"
                             class="font-normal text-purple-700">
                             <span class="hover:underline">Routebeschrijving voor Print</span>.
                         </a>
@@ -67,7 +67,7 @@
                 <p class="text-base font-light hidden sm:inline">
                     Printen? Download de
                         <a download="Routebeschrijving de Mossel (Print).pdf"
-                           :href="routebeschrijvingPrint"
+                           :href="`${publicPath}routebeschrijving-print.pdf`"
                            class="font-normal text-purple-700">
                             <span class="hover:underline">Routebeschrijving voor Print</span>.
                         </a>
@@ -104,10 +104,12 @@ export default {
     name: 'Routebeschrijving',
     components: { ArrowIcon, DirectionsIcon, DownloadIcon },
     setup() {
-        const routebeschrijving = require("@/assets/routebeschrijving.pdf")
-        const routebeschrijvingPrint = require("@/assets/routebeschrijving-print.pdf")
+        // const routebeschrijving = require("@/assets/routebeschrijving.pdf")
+        // const routebeschrijvingPrint = require("@/assets/routebeschrijving-print.pdf")
+        const publicPath = process.env.BASE_URL
 
-        return { routebeschrijving, routebeschrijvingPrint }
+        // return { routebeschrijving, routebeschrijvingPrint }
+        return { publicPath }
     }
 }
 </script>
