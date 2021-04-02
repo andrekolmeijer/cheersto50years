@@ -85,7 +85,7 @@
                         <p>
                             Het is ook mogelijk een linnen- en/of handdoekpakket te huren. De kosten hiervoor zijn €10 en €7,50 respectieve&shy;lijk.
                         </p>
-                        <p class="font-semibold text-base">
+                        <p class="italic text-base">
                             Als je hier gebruik van wil maken, graag even van te voren aan mij (Bjorn) doorgeven a.j.b.
                         </p>
                     </div>
