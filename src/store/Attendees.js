@@ -26,6 +26,10 @@ export const Attendees = {
             { name: 'Bryan', linnen: '', diet: '' },
             { name: 'Evelien', linnen: '', diet: '' },
             { name: 'Kick', linnen: '', diet: '' },
+            { name: 'Stefan', linnen: '', diet: '' },
+            { name: 'Dennis', linnen: '', diet: '' },
+            { name: 'Harm', linnen: '', diet: '' },
+            { name: 'Eva', linnen: '', diet: '' },
         ],
         coffeeAndCake: [
             { name: 'Bjorn', diet: 'nee' },
