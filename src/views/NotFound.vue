@@ -11,10 +11,10 @@
             <p class="text-2xl font-semibold mb-2">
                 Oepsie! We kunnen de pagina die je zoekt niet vinden.
             </p>
-            <p>
+            <p class="font-light">
                 Misschien is'ie gevlogen...
                 <router-link to="/"
-                             class="text-purple-700 hover:underline focus:underline focus:outline-none">
+                             class="font-normal text-purple-700 hover:underline focus:underline focus:outline-none">
                     wil je terug naar de hoofdpagina?
                 </router-link>
             </p>
