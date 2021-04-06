@@ -79,17 +79,17 @@
         <img src="@/assets/bg/punch.svg"
              class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-120px, 315px)' }"
-             alt="beer crate background image">
+             alt="punch background image">
 
         <img src="@/assets/bg/punch.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-130px, 220px)' }"
-             alt="beer crate background image">
+             alt="punch background image">
 
         <img src="@/assets/bg/punch.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(-625px, -150px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="punch background image">
 
     </div>
 

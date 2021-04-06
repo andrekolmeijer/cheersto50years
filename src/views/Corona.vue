@@ -52,12 +52,12 @@
         <img src="@/assets/bg/champagne.svg"
              class="max-w-none w-full sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-100px, -25px)' }"
-             alt="beer crate background image">
+             alt="champagne bottle background image">
 
         <img src="@/assets/bg/champagne.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(-325px, -211px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="champagne bottle background image">
 
     </div>
 

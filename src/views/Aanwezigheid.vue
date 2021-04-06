@@ -312,22 +312,22 @@
         <img src="@/assets/bg/party-hat.svg"
              class="max-w-none w-full sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(75px, -625px)' }"
-             alt="beer crate background image">
+             alt="party hat background image">
 
         <img src="@/assets/bg/cupcake.svg"
              class="max-w-none w-full sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-30px, 725px)' }"
-             alt="beer crate background image">
+             alt="cupcake background image">
 
         <img src="@/assets/bg/party-hat.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(25px, -711px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="party hat background image">
 
         <img src="@/assets/bg/cupcake.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(-325px, 611px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="cupcake background image">
 
     </div>
 

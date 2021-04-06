@@ -106,17 +106,17 @@
         <img src="@/assets/bg/hamburger.svg"
              class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-220px, -490px)' }"
-             alt="beer crate background image">
+             alt="hamburger background image">
 
         <img src="@/assets/bg/hamburger.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-220px, -460px)' }"
-             alt="beer crate background image">
+             alt="hamburger background image">
 
         <img src="@/assets/bg/hamburger.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(15px, -200px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="hamburger background image">
 
     </div>
 

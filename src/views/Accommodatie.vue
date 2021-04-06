@@ -103,17 +103,17 @@
         <img src="@/assets/bg/concert.svg"
              class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-115px, 480px)' }"
-             alt="beer crate background image">
+             alt="concert background image">
 
         <img src="@/assets/bg/concert.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-115px, 400px)' }"
-             alt="beer crate background image">
+             alt="concert background image">
 
         <img src="@/assets/bg/concert.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(-325px, -200px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="beer crate background image">
+             alt="concert background image">
 
     </div>
 

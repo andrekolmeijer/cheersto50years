@@ -45,17 +45,17 @@
         <img src="@/assets/bg/beer.svg"
              class="max-w-none w-full xs:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-220px, 175px)' }"
-             alt="champagne bottle background image">
+             alt="beer crate background image">
 
         <img src="@/assets/bg/beer.svg"
              class="max-w-none w-full hidden xs:block sm:hidden absolute inset-16 top-1/2"
              :style="{ transform: 'translate(-250px, 80px)' }"
-             alt="champagne bottle background image">
+             alt="beer crate background image">
 
         <img src="@/assets/bg/beer.svg"
              class="max-w-none h-full hidden sm:block absolute inset-16 left-1/2 top-1/2"
              :style="{ transform: 'translate(-925px, -211px)', maxHeight: 'calc(100vh - 8rem)' }"
-             alt="champagne bottle background image">
+             alt="beer crate background image">
 
     </div>
 
