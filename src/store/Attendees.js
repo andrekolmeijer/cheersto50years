@@ -44,6 +44,10 @@ export const Attendees = {
             { name: 'Patricia', diet: '' },
             { name: 'Thijmen', diet: '' },
             { name: 'Kaj', diet: '' },
+            { name: 'Ramon', diet: '' },
+            { name: 'Bertine', diet: '' },
+            { name: 'Anne', diet: '' },
+            { name: 'Jurre', diet: '' },
         ],
         winingAndDining: [
             { name: 'Bjorn', linnen: 'nee', diet: 'nee' },
@@ -71,6 +75,7 @@ export const Attendees = {
             { name: 'Rens van B.', linnen: '', diet: '' },
             { name: 'Nathalie', linnen: '', diet: '' },
             { name: 'Billie', linnen: '', diet: '' },
+            { name: 'André', linnen: '', diet: '' },
         ],
         bikesAndBeers: [
             { name: 'Bjorn', rental: 'ja', tandem: 'ja' },
