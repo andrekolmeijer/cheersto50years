@@ -45,6 +45,7 @@ export default {
   setup() {
       const store = useStore()
       const router = useRouter()
+      const md5 = require('md5')
 
       const state = reactive({
           accessCodeInput: '',
@@ -55,9 +56,10 @@ export default {
 
       function submitAccessCode() {
           if (state.accessCodeInput) {
-              const input = state.accessCodeInput;
+              const input = state.accessCodeInput
+              const inputHashed = md5(input)
 
-              store.dispatch('setAccessCode', input)
+              store.dispatch('setAccessCode', inputHashed)
               state.accessCodeInput = ''
               router.push({ path: '/' })
           }

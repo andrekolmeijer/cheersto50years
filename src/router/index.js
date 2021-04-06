@@ -88,10 +88,10 @@ const router = createRouter({
 
 router.beforeEach(async (to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAccessCode)) {
-        if (localStorage.getItem('accessCode') !== 'Veluwe') next({ name: 'Login'})
+        if (localStorage.getItem('accessCode') !== 'bad46a2b4510ded30edefac5892fb8d2') next({ name: 'Login'})
         else next()
     } else if (to.matched.some(record => record.meta.hasAccessCode)) {
-        if (localStorage.getItem('accessCode') === 'Veluwe') next({ name: 'Home'})
+        if (localStorage.getItem('accessCode') === 'bad46a2b4510ded30edefac5892fb8d2') next({ name: 'Home'})
         else next()
     } else {
         next()
