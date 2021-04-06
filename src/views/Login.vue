@@ -11,7 +11,7 @@
             </p>
             <form @submit.prevent="submitAccessCode"
                   class="z-10 w-full max-w-sm">
-                <input type="text"
+                <input type="password"
                         name="accessCode"
                         id="accessCode"
                         v-model="state.accessCodeInput"
