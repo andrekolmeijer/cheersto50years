@@ -38,7 +38,7 @@
 
         <div class="z-10 mt-6">
             <h1 class="font-cursive text-2xl xs:text-3xl sm:text-4xl font-semibold">
-                Cheers to 50 years !
+                Cheers to 50 years !!
             </h1>
             <div class="md:flex">
                 <div class="sm:mr-6 mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
