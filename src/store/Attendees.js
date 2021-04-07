@@ -13,7 +13,7 @@ export const Attendees = {
             { name: 'Rens van H.', linnen: '', diet: '' },
             { name: 'Roos van H.', linnen: '', diet: '' },
             { name: 'Martine', linnen: '', diet: '' },
-            { name: 'Danielle', linnen: '', diet: '' },
+            { name: 'Danielle', linnen: 'ja', diet: '' },
             { name: 'Tim H.', linnen: '', diet: '' },
             { name: 'Richard', linnen: '', diet: '' },
             { name: 'Roel', linnen: '', diet: '' },
@@ -29,7 +29,7 @@ export const Attendees = {
             { name: 'Stefan', linnen: '', diet: '' },
             { name: 'Dennis', linnen: '', diet: '' },
             { name: 'Harm', linnen: '', diet: '' },
-            { name: 'Eva', linnen: '', diet: '' },
+            { name: 'Eva', linnen: 'ja', diet: '' },
         ],
         coffeeAndCake: [
             { name: 'Bjorn', diet: 'nee' },
