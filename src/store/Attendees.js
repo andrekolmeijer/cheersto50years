@@ -53,7 +53,7 @@ export const Attendees = {
             { name: 'Bjorn', linnen: 'nee', diet: 'nee' },
             { name: 'Eline', linnen: 'nee', diet: 'nee' },
             { name: 'Dumont', linnen: 'ja', diet: '' },
-            { name: 'Linda', linnen: 'ja', diet: '' },
+            { name: 'Linda', linnen: 'ja', diet: 'Geen vis' },
             { name: 'Martien', linnen: '', diet: '' },
             { name: 'Marlie', linnen: '', diet: '' },
             { name: 'MaMieke', linnen: '', diet: '' },
