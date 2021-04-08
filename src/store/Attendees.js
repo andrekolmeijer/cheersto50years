@@ -42,7 +42,7 @@ export const Attendees = {
             { name: 'Els', diet: '' },
             { name: 'Dick', diet: '' },
             { name: 'Patricia', diet: '' },
-            { name: 'Thijmen', diet: '' },
+            { name: 'Tijmen', diet: '' },
             { name: 'Kaj', diet: '' },
             { name: 'Ramon', diet: '' },
             { name: 'Bertine', diet: '' },
