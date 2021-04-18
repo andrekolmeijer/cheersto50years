@@ -82,6 +82,9 @@ export const Attendees = {
             { name: 'Eline', rental: 'ja', tandem: 'Bjorn' },
             { name: 'Linda', rental: '', tandem: '' },
             { name: 'Dumont', rental: '', tandem: '' },
+            { name: 'Martien', rental: 'nee', tandem: '' },
+            { name: 'Marli', rental: 'nee', tandem: '' },
+            { name: 'André', rental: 'ja', tandem: 'nee' },
         ]
     },
 
