@@ -2,7 +2,7 @@ export const Date = {
     namespaced: true,
 
     state: {
-        eventDate: '30 april t/m 2 mei'
+        eventDate: '11 juni t/m 13 juni'
     },
 
     mutations: {},
