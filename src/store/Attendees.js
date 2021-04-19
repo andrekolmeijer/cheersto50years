@@ -22,7 +22,7 @@ export const Attendees = {
             { name: 'Jill', linnen: '', diet: '' },
             { name: 'Sascha', linnen: 'ja', diet: '' },
             { name: 'Willie', linnen: '', diet: '' },
-            { name: 'André', linnen: '', diet: '' },
+            { name: 'André', linnen: 'ja', diet: 'nee' },
             { name: 'Bryan', linnen: 'ja', diet: '' },
             { name: 'Evelien', linnen: '', diet: '' },
             { name: 'Kick', linnen: '', diet: '' },
@@ -75,7 +75,7 @@ export const Attendees = {
             { name: 'Rens van B.', linnen: '', diet: '' },
             { name: 'Nathalie', linnen: '', diet: '' },
             { name: 'Billie', linnen: '', diet: '' },
-            { name: 'André', linnen: '', diet: '' },
+            { name: 'André', linnen: 'nee', diet: 'nee' },
         ],
         bikesAndBeers: [
             { name: 'Bjorn', rental: 'ja', tandem: 'ja' },
