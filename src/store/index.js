@@ -6,6 +6,7 @@ export default createStore({
   state: {
       accessCode: '',
       messageRead: false,
+      messageReadApril: false,
       previousRouteName: ''
   },
 
@@ -18,12 +19,19 @@ export default createStore({
           localStorage.setItem('messageRead', true)
           state.messageRead = true
       },
+      SET_MESSAGE_READ_APRIL(state) {
+          localStorage.setItem('messageReadApril', true)
+          state.messageReadApril = true
+      },
       INITIALISE_STORE(state) {
           if (localStorage.getItem('accessCode')) {
               state.accessCode = localStorage.getItem('accessCode')
           }
           if (localStorage.getItem('messageRead')) {
               state.messageRead = localStorage.getItem('messageRead')
+          }
+          if (localStorage.getItem('messageReadApril')) {
+              state.messageReadApril = localStorage.getItem('messageReadApril')
           }
       },
       GET_PREVIOUS_ROUTE_NAME(state) {
@@ -39,6 +47,9 @@ export default createStore({
       },
       setMessageRead({ commit }) {
           commit('SET_MESSAGE_READ')
+      },
+      setMessageReadApril({ commit }) {
+          commit('SET_MESSAGE_READ_APRIL')
       },
       initialiseStore({ commit }) {
           commit('INITIALISE_STORE')
