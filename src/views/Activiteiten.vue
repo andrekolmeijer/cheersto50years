@@ -48,7 +48,7 @@
                             Burgers, Beer and BBQ &#127828; &#127866; &#129385;
                         </h2>
                         <h3 class="text-base mb-3 font-light">
-                            Vrijdag 30 april 19:00 uur
+                            Vrijdag 11 juni 19:00 uur
                         </h3>
                         <p class="text-base">
                             Deze avond staat in het teken van bier en BBQ. Mogelijk maken we ook een kampvuurtje. Dat is afhankelijk van het weer.
@@ -59,7 +59,7 @@
                             Coffee and Cake &#9749; &#127856;
                         </h2>
                         <h3 class="text-base mb-3 font-light">
-                            Zaterdag 1 mei 13:00 uur
+                            Zaterdag 12 juni 13:00 uur
                         </h3>
                         <p class="text-base">
                             Tussen 13:00 en 15:00 uur staat er koffie en gebak klaar. Je bent natuurlijk vrij om eerder te komen en/of langer te blijven.
@@ -72,7 +72,7 @@
                             Wining and Dining &#127863; &#127869;
                         </h2>
                         <h3 class="text-base mb-3 font-light">
-                            Zaterdag 1 mei 17:00 uur
+                            Zaterdag 12 juni 17:00 uur
                         </h3>
                         <p class="text-base">
                             Naast gezelligheid wordt de avond aangekleed met lekkere wijn en culinaire gerechten. We eten om 19:00 uur.
@@ -83,7 +83,7 @@
                             Bikes and Beers &#128690; &#127867;
                         </h2>
                         <h3 class="text-base mb-3 font-light">
-                            Zondag 2 mei 13:00 uur
+                            Zondag 13 juni 13:00 uur
                         </h3>
                         <p class="text-base">
                             Op zondag gaan we fietsen over de Veluwe en stoppen we ergens voor een drankje. Als je wil kun je een fiets reserveren bij Guill.
