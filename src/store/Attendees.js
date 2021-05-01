@@ -10,6 +10,7 @@ export const Attendees = {
             { name: 'Bryan', linnen: '', diet: '' },
             { name: 'Tim H.', linnen: '', diet: '' },
             { name: 'Evelien', linnen: '', diet: '' },
+            { name: 'Danielle', linnen: 'ja', diet: '' },
         ],
         coffeeAndCake: [
             { name: 'Bjorn', diet: 'nee' },
