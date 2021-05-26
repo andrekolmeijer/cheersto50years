@@ -1,5 +1,7 @@
 <template>
 
+    <Messages />
+
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
         <router-link :to="{ name: 'Home' }"
@@ -64,9 +66,10 @@
 <script>
 import ArrowIcon from '@/components/ArrowIcon'
 import PresentIcon from '@/components/PresentIcon'
+import Messages from '@/components/Messages'
 
 export default {
     name: 'Cadeau',
-    components: { ArrowIcon, PresentIcon }
+    components: { ArrowIcon, PresentIcon, Messages }
 }
 </script>

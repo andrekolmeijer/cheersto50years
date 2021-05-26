@@ -1,5 +1,7 @@
 <template>
 
+    <Messages />
+
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
         <router-link :to="{ name: 'Home' }"
@@ -99,10 +101,11 @@
 import ArrowIcon from '@/components/ArrowIcon'
 import DirectionsIcon from '@/components/DirectionsIcon'
 import DownloadIcon from '@/components/DownloadIcon'
+import Messages from '@/components/Messages'
 
 export default {
     name: 'Routebeschrijving',
-    components: { ArrowIcon, DirectionsIcon, DownloadIcon },
+    components: { ArrowIcon, DirectionsIcon, DownloadIcon, Messages },
     setup() {
         const publicPath = process.env.BASE_URL
 

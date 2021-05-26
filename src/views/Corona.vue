@@ -1,5 +1,7 @@
 <template>
 
+    <Messages />
+
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
         <router-link :to="{ name: 'Home' }"
@@ -23,25 +25,27 @@
                 <div class="md:flex">
                     <div class="sm:mr-6 mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
                         <p>
-                            Een feest midden in een pandemie, kan dat wel? &#129300;
-                            <span class="font-bold">
-                                Het feest kan alleen doorgaan als het ook veilig kan.
-                            </span>
-                            Hierbij gaan we uit van de richtlijnen van het RIVM. Vooralsnog staat het feest gepland voor het weekend van:
+                            In overleg met <span class="font-semibold">Boererij Mossel</span> is besloten om het feest door te laten gaan. &#127881; &#127881; &#127881;
                         </p>
-                        <p class="text-center font-bold">
-                            {{ store.state.Date.eventDate }}
+                        <p>
+                            Hierbij worden de
+                            <a href="https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/publicaties/2021/05/11/beeldsamenvatting-coronamaatregelen/beeldsamenvatting-coronaregels-20210517.pdf"
+                               class="text-purple-700 font-semibold"
+                               target="_blank">
+                                <span class="hover:underline">coronaregels</span>
+                            </a>
+                            in acht genomen. Het feest zal hoofdzakelijk buiten plaatsvinden en er zijn voldoende parasols en tenten om ook bij regen buiten te kunnen zitten. <span class="italic">Neem eventueel een extra trui mee.</span>
                         </p>
-                        <p class="italic text-base text-center">
-                            <span class="not-italic">
-                                &#127880;
-                            </span>
-                            Houd voor eventuele wijzigingen de website in de gaten.
+                        <p>
+                            M.b.t. de slaapplekken willen we mensen die samen komen bij elkaar op de kamer indelen. Gezien er een aantal afmeldingen zijn denken we daar onderling wel aan uit te komen.
                         </p>
                     </div>
                     <div class="mt-3 md:mt-6 space-y-3 text-lg w-full md:w-1/2 max-w-lg">
+                        <p class="font-semibold">
+                            Voor diegene die het niet zien zitten om te blijven slapen mag er vanwege Corona ook na zonsondergang over het zandpad naar de openbare weg gereden worden.
+                        </p>
                         <p>
-                            Mocht het uiteindelijk onverantwoord zijn om het feest door te laten gaan, dan wordt er een nieuwe datum gezocht en wordt het feest op een ander moment gevierd… safety first! 🦺 🥽 ⛑️
+                            Uiteraard ben je zelf verantwoordelijk voor je eigen veiligheid. Dus probeer zelf in te schatten of naar huis toe rijden wellicht verstandiger is... safety first! 🦺 🥽 ⛑️
                         </p>
                     </div>
                 </div>
@@ -66,11 +70,12 @@
 <script>
 import ArrowIcon from '@/components/ArrowIcon'
 import CoronaIcon from '@/components/CoronaIcon'
+import Messages from '@/components/Messages'
 import { useStore } from 'vuex'
 
 export default {
     name: 'Corona',
-    components: { ArrowIcon, CoronaIcon },
+    components: { ArrowIcon, CoronaIcon, Messages },
     setup() {
         const store = useStore()
 

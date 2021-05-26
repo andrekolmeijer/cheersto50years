@@ -1,5 +1,7 @@
 <template>
 
+    <Messages />
+
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
         <router-link :to="{ name: 'Home' }"
@@ -338,11 +340,12 @@ import ArrowIcon from '@/components/ArrowIcon'
 import PeopleIcon from '@/components/PeopleIcon'
 import CheckIcon from '@/components/CheckIcon'
 import CrossIcon from '@/components/CrossIcon'
+import Messages from '@/components/Messages'
 import { useStore } from "vuex"
 
 export default {
     name: 'Aanwezigheid',
-    components: { ArrowIcon, PeopleIcon, CheckIcon, CrossIcon },
+    components: { ArrowIcon, PeopleIcon, CheckIcon, CrossIcon, Messages },
     setup() {
         const store = useStore()
 

@@ -1,5 +1,7 @@
 <template>
 
+    <Messages />
+
     <div class="relative min-h-screen p-12 flex flex-col items-center overflow-hidden">
 
         <router-link :to="{ name: 'Home' }"
@@ -26,7 +28,7 @@
                         <p>
                             Als feestlocatie is gekozen voor
                             <a href="https://www.boerderij-mossel.nl/" class="text-purple-700 font-semibold" target="_blank">
-                            <span class="hover:underline">Boerderij Mossel</span>.
+                                <span class="hover:underline">Boerderij Mossel</span>.
                             </a>
                             Welke is gelegen op één van de mooiste en stilste plaatsen van ons land. &#128027; &#128029; &#129419;
                         </p>
@@ -122,9 +124,10 @@
 <script>
 import ArrowIcon from '@/components/ArrowIcon'
 import AccommodationIcon from '@/components/AccommodationIcon'
+import Messages from '@/components/Messages'
 
 export default {
     name: 'Accommodatie',
-    components: { ArrowIcon, AccommodationIcon }
+    components: { ArrowIcon, AccommodationIcon, Messages }
 }
 </script>
