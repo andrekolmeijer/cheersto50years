@@ -7,7 +7,7 @@
                 Cheers to 50 years !
             </h1>
             <p class="z-10 text-center text-lg">
-                Voer de code van je uitnodiging in om toegang te krijgen tot de site.
+                Voer het wachtwoord op je uitnodiging in om toegang te krijgen tot de site.
             </p>
             <form @submit.prevent="submitAccessCode"
                   class="z-10 w-full max-w-sm">
